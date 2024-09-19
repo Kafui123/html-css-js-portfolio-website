@@ -293,7 +293,9 @@ section {
 }
 
 .about-pic {
-    border-radius: 2rem;   
+    border-radius: 2rem;  
+    width: 460px;
+    height: auto; 
 }
 
 .arrow {
@@ -363,30 +365,106 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
-#projects {
+/* General styles for the projects section */
+/* General Section Styling */
+.projects {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+.projects-header .section__text__p1 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.projects-header .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Project Content Styling */
+.projects-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between each project box */
+    flex-wrap: nowrap; /* Ensure projects wrap to the next line */
+}
+
+/* Portfolio Box Styling */
+.portfolio-box {
     position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
 }
 
-.color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+.portfolio-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Elevate on hover */
 }
 
+/* Image Styling */
 .project-img {
-    border-radius: 2rem;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
+/* Overlay Styling */
+.projects-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.portfolio-box:hover .projects-overlay {
+    opacity: 1;
+}
+
+/* Title and Description */
 .project-title {
-    margin: 1rem;
-    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-    }
+.project-description {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
 
 
 
