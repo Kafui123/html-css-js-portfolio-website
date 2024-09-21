@@ -84,6 +84,10 @@
         gap: 0.5rem;
         text-align: center;
     }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
     .section__pic-container {
         width: auto;
         height: 46vw;
@@ -99,3 +103,7 @@
         text-align: justify;
     }
 }
+.internship-info p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+}
+
